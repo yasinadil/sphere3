@@ -4,7 +4,6 @@ import Split from "../Split";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import ModalVideo from "react-modal-video";
 import "react-modal-video/css/modal-video.css";
 
 const VideoWithTestimonials = () => {
@@ -110,11 +109,6 @@ const VideoWithTestimonials = () => {
                       best for the project and delivered exceptional results.
                     </p>
                     <div className="info">
-                      <div className="img">
-                        <div className="img-box">
-                          <img src="/img/clients/2.jpg" alt="" />
-                        </div>
-                      </div>
                       <div className="cont">
                         <div className="author">
                           <h6 className="author-name custom-font">
@@ -134,11 +128,6 @@ const VideoWithTestimonials = () => {
                       litora.
                     </p>
                     <div className="info">
-                      <div className="img">
-                        <div className="img-box">
-                          <img src="/img/clients/3.jpg" alt="" />
-                        </div>
-                      </div>
                       <div className="cont">
                         <div className="author">
                           <h6 className="author-name custom-font">
