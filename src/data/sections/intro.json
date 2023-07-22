@@ -1,26 +1,26 @@
 [
   {
     "id": 1,
-    "title": {
-      "first": "Unique",
-      "second": "brand stories"
-    },
-    "content": "Crafting Legends, Building Brands: Your Story, Our Passion!",
-    "image": "/img/brand.jpg"
-  },
-  {
-    "id": 2,
     "title": "Original Solutions",
     "content": "Our team of creative thinkers collaborates closely with you to deliver solutions that stand out from the crowd and make a lasting impact",
     "image": "/img/lightbulb.jpg"
   },
   {
-    "id": 3,
+    "id": 2,
     "title": {
       "first": "Empowering",
       "second": "Your Business Journey"
     },
     "content": "At Sphere3 Labs, we are committed to your success. Let our dedicated team empower your business journey, guiding you through innovation, agility, and strategic implementation",
     "image": "/img/empower.jpg"
+  },
+  {
+    "id": 3,
+    "title": {
+      "first": "Unique",
+      "second": "brand stories"
+    },
+    "content": "Crafting Legends, Building Brands: Your Story, Our Passion!",
+    "image": "/img/brand.jpg"
   }
 ]

@@ -1,8 +1,8 @@
 {
   "id": 1,
-  "image1": "/img/intro/1.jpg",
-  "image2": "/img/intro/3.jpg",
-  "image3": "/img/intro/2.jpg",
+  "image1": "/img/about2.jpg",
+  "image2": "/img/about1.jpg",
+  "image3": "/img/about3.jpg",
   "smallTitle": "About Us",
   "title": { "first": "We are more than just", "second": "a digital agency." },
   "content": "We are Sphere3 Labs. We create award-winning websites, remarkable brands and cutting-edge apps. As a passionate team of innovative minds, we specialize in crafting more than just websites; we build captivating digital experiences that leave a lasting impression.",
