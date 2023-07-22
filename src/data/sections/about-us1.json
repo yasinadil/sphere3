@@ -22,7 +22,7 @@
     {
       "id": 3,
       "icon": "medal",
-      "name": { "first": "Heigh", "second": "Perfomance" },
+      "name": { "first": "High", "second": "Perfomance" },
       "wowDelay": ".8s"
     }
   ]
