@@ -12,17 +12,17 @@
   {
     "id": 3,
     "lightImage": "/img/clients/brands/light/3.png",
-    "darkImage": "/img/clients/brands/dark/03.png"
+    "darkImage": "/img/clients/brands/virtu.png"
   },
   {
     "id": 4,
     "lightImage": "/img/clients/brands/light/4.png",
-    "darkImage": "/img/clients/brands/dark/04.png"
+    "darkImage": "/img/clients/brands/teconni.png"
   },
   {
     "id": 5,
     "lightImage": "/img/clients/brands/light/5.png",
-    "darkImage": "/img/clients/brands/dark/05.png"
+    "darkImage": "/img/clients/brands/freezin.png"
   },
   {
     "id": 6,
@@ -37,6 +37,6 @@
   {
     "id": 8,
     "lightImage": "/img/clients/brands/light/8.png",
-    "darkImage": "/img/clients/brands/dark/08.png"
+    "darkImage": "/img/clients/brands/meta.png"
   }
 ]
