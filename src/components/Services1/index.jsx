@@ -1,6 +1,10 @@
 import React from "react";
 import Split from "../Split";
 import Link from "next/link";
+import Image from "next/image";
+import blockchain from "../../../public/img/blockchain.png";
+import monitor from "../../../public/img/monitor.png";
+import saas from "../../../public/img/saas.png";
 
 const Services1 = () => {
   return (
@@ -36,32 +40,30 @@ const Services1 = () => {
             className="col-lg-3 col-md-6 item-box wow fadeInLeft"
             data-wow-delay=".5s"
           >
-            <span className="icon pe-7s-paint-bucket"></span>
-            <h6>Graphic Design</h6>
+            <Image src={monitor} alt="web3" />
+            <h6>Web Development</h6>
             <p>
-              Tempore corrupti temporibus fuga earum asperiores fugit
-              laudantium.
+              We specialize in custom-coded websites, and wordpress websites.
             </p>
           </div>
           <div
             className="col-lg-3 col-md-6 item-box wow fadeInLeft"
             data-wow-delay=".7s"
           >
-            <span className="icon pe-7s-phone"></span>
-            <h6>
-              Web &amp; <br /> Mobile Design
-            </h6>
-            <p>Tempore corrupti temporibus fuga earum asperiores fugit.</p>
+            <Image src={blockchain} alt="web3" />
+            <h6>Blockchain</h6>
+            <p>
+              We provide a range of Web3 / Blockchain services, and
+              decentralized apps.
+            </p>
           </div>
           <div
             className="col-lg-3 col-md-6 item-box wow fadeInLeft"
             data-wow-delay=".9s"
           >
-            <span className="icon pe-7s-display1"></span>
-            <h6>
-              Social <br /> media Marketing
-            </h6>
-            <p>Tempore corrupti temporibus fuga earum asperiores fugit.</p>
+            <Image src={saas} alt="web3" />
+            <h6>SaaS products</h6>
+            <p>We build rock-solid foundation that will scale your SaaS.</p>
           </div>
         </div>
       </div>

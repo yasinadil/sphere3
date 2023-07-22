@@ -83,23 +83,22 @@ const VideoWithTestimonials = () => {
                 >
                   <div className="item">
                     <p>
-                      Nulla metus metus ullamcorper vel tincidunt sed euismod
-                      nibh volutpat velit class aptent taciti sociosqu ad
-                      litora.
+                      It was a pleasure working together, great communication
+                      and professional work.
                     </p>
                     <div className="info">
-                      <div className="img">
+                      {/* <div className="img">
                         <div className="img-box">
                           <img src="/img/clients/1.jpg" alt="" />
                         </div>
-                      </div>
+                      </div> */}
                       <div className="cont">
                         <div className="author">
                           <h6 className="author-name custom-font">
-                            Alex Regelman
+                            Stefan North
                           </h6>
                           <span className="author-details">
-                            Co-founder, Colabrio
+                            CEO, North3D Studios
                           </span>
                         </div>
                       </div>
@@ -107,9 +106,8 @@ const VideoWithTestimonials = () => {
                   </div>
                   <div className="item">
                     <p>
-                      Nulla metus metus ullamcorper vel tincidunt sed euismod
-                      nibh volutpat velit class aptent taciti sociosqu ad
-                      litora.
+                      Thanks to sphere3&apos;s expert opinion, they did what was
+                      best for the project and delivered exceptional results.
                     </p>
                     <div className="info">
                       <div className="img">
@@ -120,11 +118,11 @@ const VideoWithTestimonials = () => {
                       <div className="cont">
                         <div className="author">
                           <h6 className="author-name custom-font">
-                            Alex Regelman
+                            Dotsama NFT Marketplace
                           </h6>
-                          <span className="author-details">
+                          {/* <span className="author-details">
                             Co-founder, Colabrio
-                          </span>
+                          </span> */}
                         </div>
                       </div>
                     </div>

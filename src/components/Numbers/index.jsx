@@ -15,12 +15,14 @@ const Numbers1 = () => {
                 <span className={`icon ${item.icon}`}></span>
                 <h3 className="custom-font">
                   &nbsp;
-                  <CountUp redraw={true} end={item.value} duration="3">
+                  <CountUp redraw={true} end={item.value} duration="2">
                     {({ countUpRef, start }) => (
                       <VisibilitySensor onChange={start} delayedCall>
                         <>
                           <span className="count" ref={countUpRef} />{" "}
-                          {item.id == 3 ? "K" : ""}
+                          {item.id == 1 ? "+" : ""}
+                          {item.id == 3 ? "%" : ""}
+                          {item.id == 4 ? "%" : ""}
                         </>
                       </VisibilitySensor>
                     )}

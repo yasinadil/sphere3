@@ -16,11 +16,7 @@ const SkillsCircle = ({ subBG, theme }) => {
     },
   };
   return (
-    <section
-      className={`skills-circle pt-50 pb-50 ${
-        subBG ? "sub-bg" : ""
-      }`}
-    >
+    <section className={`skills-circle pt-50 pb-50 ${subBG ? "sub-bg" : ""}`}>
       <div className="container">
         <div className="row">
           <div className="col-lg-7">
@@ -30,15 +26,15 @@ const SkillsCircle = ({ subBG, theme }) => {
                   <div className="item wow fadeInLeft" data-wow-delay=".6">
                     <div className="skill">
                       <CircularProgressbar
-                        value={90}
+                        value={100}
                         strokeWidth={2}
-                        text={`${90}%`}
+                        text={`${100}%`}
                         styles={cpStyle}
                       />
                     </div>
                     <div className="cont">
-                      <span>Project</span>
-                      <h6>Consulting</h6>
+                      <span>Web</span>
+                      <h6>Development</h6>
                     </div>
                   </div>
                 </div>
@@ -46,15 +42,14 @@ const SkillsCircle = ({ subBG, theme }) => {
                   <div className="item wow fadeInLeft" data-wow-delay=".3">
                     <div className="skill">
                       <CircularProgressbar
-                        value={75}
+                        value={90}
                         strokeWidth={2}
-                        text={`${75}%`}
+                        text={`${90}%`}
                         styles={cpStyle}
                       />
                     </div>
                     <div className="cont">
-                      <span>App</span>
-                      <h6>Development</h6>
+                      <h6>Blockchain</h6>
                     </div>
                   </div>
                 </div>
