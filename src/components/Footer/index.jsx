@@ -93,7 +93,7 @@ const Footer = ({ noSubBG }) => {
                 )}
               </Formik>
             </div>
-            <div className="insta">
+            {/* <div className="insta">
               <h6 className="custom-font stit simple-btn">Instagram Post</h6>
               <div className="insta-gallary">
                 <a href="#0">
@@ -106,14 +106,11 @@ const Footer = ({ noSubBG }) => {
                   <img src="/img/insta/3.jpg" alt="" />
                 </a>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
         <div className="copyrights text-center">
-          <p>
-            © 2022, Avo Template. Made with passion by{" "}
-            <a href="#0">ThemesCamp</a>.
-          </p>
+          <p>© 2023, Sphere3 Labs - Your Business Partner</p>
         </div>
       </div>
     </footer>

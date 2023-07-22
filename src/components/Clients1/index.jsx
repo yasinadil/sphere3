@@ -7,7 +7,7 @@ const Clients1 = ({ theme, subBG }) => {
   var first = Clients1Data.slice(0, Clients1Data.length / 2);
   var second = Clients1Data.slice(4, Clients1Data.length);
   return (
-    <section className={`clients section-padding ${subBG ? 'sub-bg' : ''}`}>
+    <section className={`clients section-padding ${subBG ? "sub-bg" : ""}`}>
       <div className="container">
         <div className="row">
           <div className="col-lg-4 valign">
@@ -24,7 +24,7 @@ const Clients1 = ({ theme, subBG }) => {
                 {first.map((item) => (
                   <div key={item.id} className="col-md-3 col-6 brands">
                     <div
-                      className="item wow fadeIn"
+                      className="item  "
                       data-wow-delay={`${
                         item.id == 1
                           ? ".3"
@@ -43,7 +43,7 @@ const Clients1 = ({ theme, subBG }) => {
                         ) : (
                           <img src={item.darkImage} alt="" />
                         )}
-                        <Split>
+                        {/* <Split>
                           <a
                             href="#0"
                             className="link words chars splitting"
@@ -51,7 +51,7 @@ const Clients1 = ({ theme, subBG }) => {
                           >
                             {item.url}
                           </a>
-                        </Split>
+                        </Split> */}
                       </div>
                     </div>
                   </div>
@@ -74,7 +74,7 @@ const Clients1 = ({ theme, subBG }) => {
                     }`}
                   >
                     <div
-                      className="item wow fadeIn"
+                      className="item"
                       data-wow-delay={`${
                         item.id == 1
                           ? ".4"
@@ -93,7 +93,7 @@ const Clients1 = ({ theme, subBG }) => {
                         ) : (
                           <img src={item.darkImage} alt="" />
                         )}
-                        <Split>
+                        {/* <Split>
                           <a
                             href="#0"
                             className="link words chars splitting"
@@ -101,7 +101,7 @@ const Clients1 = ({ theme, subBG }) => {
                           >
                             {item.url}
                           </a>
-                        </Split>
+                        </Split> */}
                       </div>
                     </div>
                   </div>

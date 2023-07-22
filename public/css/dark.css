@@ -3772,7 +3772,7 @@ header.simpl .caption .btn-curve {
 
 /* ====================== [ End services ] ====================== */
 /* ====================== [ Start brands ] ====================== */
-.clients .brands:hover img {
+/* .clients .brands:hover img {
   -webkit-transform: scale(0);
   -ms-transform: scale(0);
   transform: scale(0);
@@ -3791,7 +3791,7 @@ header.simpl .caption .btn-curve {
   animation: fadeInUp 0.3s cubic-bezier(0.3, 0, 0.7, 1) both;
   -webkit-animation-delay: calc(20ms * var(--char-index));
   animation-delay: calc(20ms * var(--char-index));
-}
+} */
 
 .clients .brands .item {
   text-align: center;
@@ -3832,14 +3832,14 @@ header.simpl .caption .btn-curve {
   margin-bottom: 30px;
 }
 
-.clients-brand .brands:hover .img {
+/* .clients-brand .brands:hover .img {
   -webkit-transform: scale(0);
   -ms-transform: scale(0);
   transform: scale(0);
   opacity: 0;
-}
+} */
 
-.clients-brand .brands:hover .link {
+/* .clients-brand .brands:hover .link {
   opacity: 1 !important;
   -webkit-transition: all 0;
   -o-transition: all 0;
@@ -3851,7 +3851,7 @@ header.simpl .caption .btn-curve {
   animation: fadeInUp 0.3s cubic-bezier(0.3, 0, 0.7, 1) both;
   -webkit-animation-delay: calc(20ms * var(--char-index));
   animation-delay: calc(20ms * var(--char-index));
-}
+} */
 
 .clients-brand .item {
   position: relative;
