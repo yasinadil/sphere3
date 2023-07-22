@@ -10,7 +10,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <title>Avo</title>
+        <title>Sphere3 Labs</title>
         <link rel="icon" href="/img/favicon.ico" />
       </Head>
       <Cursor />
@@ -22,8 +22,7 @@ function MyApp({ Component, pageProps }) {
         strategy="beforeInteractive"
         id="wow"
         src="/js/wow.min.js"
-      >
-      </Script>
+      ></Script>
       <Script
         strategy="beforeInteractive"
         id="splitting"
@@ -35,11 +34,7 @@ function MyApp({ Component, pageProps }) {
         id="isotope"
         src="/js/isotope.pkgd.min.js"
       ></Script>
-      <Script
-        strategy="lazyOnload" 
-        id="initWow" 
-        src="/js/initWow.js"
-      ></Script>
+      <Script strategy="lazyOnload" id="initWow" src="/js/initWow.js"></Script>
     </>
   );
 }
