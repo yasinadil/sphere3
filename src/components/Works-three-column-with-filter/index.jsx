@@ -10,7 +10,7 @@ const WorksThreeColumnWithFilter = ({ filterPosition }) => {
     if (pageLoaded) {
       setTimeout(() => {
         initIsotope();
-      }, 1000)
+      }, 1000);
     }
   }, [pageLoaded]);
   return (
@@ -30,8 +30,8 @@ const WorksThreeColumnWithFilter = ({ filterPosition }) => {
               <span data-filter="*" className="active">
                 All
               </span>
-              <span data-filter=".brand">Branding</span>
-              <span data-filter=".web">Mobile App</span>
+              <span data-filter=".brand">Web Development</span>
+              <span data-filter=".web">Blockchain</span>
               <span data-filter=".graphic">Creative</span>
             </div>
           </div>
@@ -41,14 +41,14 @@ const WorksThreeColumnWithFilter = ({ filterPosition }) => {
               <div className="item-img wow fadeInUp" data-wow-delay=".4s">
                 <Link href="/project-details/project-details-dark">
                   <a>
-                    <img src="/img/portfolio/mas/01.jpg" alt="image" />
+                    <img src="/img/portfolio/port1.jpg" alt="image" />
                   </a>
                 </Link>
               </div>
               <div className="cont">
                 <h6>Creativity Demand</h6>
                 <span>
-                  <a href="#0">Design</a>, <a href="#0">WordPress</a>
+                  <a href="#0">Design</a>, <a href="#0">React JS, Node Js</a>
                 </span>
               </div>
             </div>
@@ -57,14 +57,14 @@ const WorksThreeColumnWithFilter = ({ filterPosition }) => {
               <div className="item-img wow fadeInUp" data-wow-delay=".4s">
                 <Link href="/project-details/project-details-dark">
                   <a>
-                    <img src="/img/portfolio/mas/02.jpg" alt="image" />
+                    <img src="/img/portfolio/dot.jpg" alt="image" />
                   </a>
                 </Link>
               </div>
               <div className="cont">
                 <h6>Through The Breaking</h6>
                 <span>
-                  <a href="#0">Design</a>, <a href="#0">WordPress</a>
+                  <a href="#0">Blockchain</a>, <a href="#0">NFT Marketplace</a>
                 </span>
               </div>
             </div>
