@@ -51,7 +51,7 @@ const NavbarFullMenu = ({ theme, lr }) => {
                 <ul className="main-menu">
                   <li>
                     <div className="o-hidden">
-                      <Link href="/home/home1-dark">
+                      <Link href="/">
                         <a className="link">
                           <span className="nm">01.</span>Home
                         </a>
@@ -71,7 +71,7 @@ const NavbarFullMenu = ({ theme, lr }) => {
                   </li>
                   <li>
                     <div className="o-hidden">
-                      <Link href="/about/about-dark">
+                      <Link href="/about">
                         <a className="link">
                           <span className="nm">02.</span>About Us
                         </a>
@@ -80,7 +80,7 @@ const NavbarFullMenu = ({ theme, lr }) => {
                   </li>
                   <li>
                     <div className="o-hidden">
-                      <Link href="/works2/works2-dark">
+                      <Link href="/works">
                         <a className="link">
                           <span className="nm">03.</span>Portfolio{" "}
                         </a>
@@ -90,7 +90,7 @@ const NavbarFullMenu = ({ theme, lr }) => {
 
                   <li>
                     <div className="o-hidden">
-                      <Link href="/showcase2/showcase2-dark">
+                      <Link href="/showcase">
                         <a className="link">
                           <span className="nm">04.</span>Showcases
                         </a>
@@ -100,7 +100,7 @@ const NavbarFullMenu = ({ theme, lr }) => {
 
                   <li>
                     <div className="o-hidden">
-                      <Link href="/contact/contact-dark">
+                      <Link href="/contact">
                         <a className="link">
                           <span className="nm">05.</span>Contact
                         </a>
@@ -118,14 +118,12 @@ const NavbarFullMenu = ({ theme, lr }) => {
                 </div>
                 <div className="item">
                   <h6>Address :</h6>
-                  <p>
-                    541 Melville Ave, Palo Alto, CA 94301, ask@ohio.colabr.io
-                  </p>
+                  <p>Johar Town, PK Lahore</p>
                 </div>
                 <div className="item">
                   <h6>Email :</h6>
                   <p>
-                    <a href="#0">Avo_website@gmail.com</a>
+                    <a href="#0">contact@sphere3labs.com</a>
                   </p>
                 </div>
               </div>

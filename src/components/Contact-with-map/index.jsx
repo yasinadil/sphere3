@@ -1,7 +1,7 @@
 import React from "react";
 import { Formik, Form, Field } from "formik";
-import axios from 'axios';
-import Split from '../Split';
+import axios from "axios";
+import Split from "../Split";
 
 const ContactWithMap = ({ theme = "dark" }) => {
   const messageRef = React.useRef(null);
@@ -36,11 +36,11 @@ const ContactWithMap = ({ theme = "dark" }) => {
                     // show message
                     const formData = new FormData();
 
-                    formData.append('name', values.name);
-                    formData.append('email', values.email);
-                    formData.append('message', values.message);
+                    formData.append("name", values.name);
+                    formData.append("email", values.email);
+                    formData.append("message", values.message);
 
-                    const res = await axios.post('/contact.php', formData);
+                    const res = await axios.post("/contact.php", formData);
 
                     if (!res) return;
 
@@ -96,7 +96,12 @@ const ContactWithMap = ({ theme = "dark" }) => {
                           />
                         </div>
 
-                        <button type="submit" className={`btn-curve ${theme === 'dark' ? 'btn-lit':'btn-color'} disabled`}>
+                        <button
+                          type="submit"
+                          className={`btn-curve ${
+                            theme === "dark" ? "btn-lit" : "btn-color"
+                          } disabled`}
+                        >
                           <span>Send Message</span>
                         </button>
                       </div>
@@ -115,7 +120,7 @@ const ContactWithMap = ({ theme = "dark" }) => {
                 </Split>
                 <div className="item mb-40">
                   <h5>
-                    <a href="#0">Email@example.com</a>
+                    <a href="#0">contact@sphere3labs.com</a>
                   </h5>
                   <h5>+4.930.705.5448</h5>
                 </div>
@@ -126,9 +131,9 @@ const ContactWithMap = ({ theme = "dark" }) => {
                 </Split>
                 <div className="item">
                   <h6>
-                    295 Witting Streets Suite 666,
+                    Expo Road, Johar Town
                     <br />
-                    Melbourne, Australia
+                    Lahore, Pakistan
                   </h6>
                 </div>
                 <div className="social mt-50">
@@ -163,7 +168,7 @@ const ContactWithMap = ({ theme = "dark" }) => {
         <div className="container">
           <div className="copyrights text-center mt-0">
             <p>
-              © 2022, Avo Template. Made with passion by 
+              © 2022, Avo Template. Made with passion by
               <a href="#0">ThemesCamp</a>.
             </p>
           </div>

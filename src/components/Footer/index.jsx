@@ -15,24 +15,26 @@ const Footer = ({ noSubBG }) => {
   }
   const sendEmail = (ms) => new Promise((r) => setTimeout(r, ms));
   return (
-    <footer className={`footer-half ${noSubBG ? '':'sub-bg'} section-padding pb-0`}>
+    <footer
+      className={`footer-half ${noSubBG ? "" : "sub-bg"} section-padding pb-0`}
+    >
       <div className="container">
         <div className="row">
           <div className="col-lg-5">
             <div className="cont">
               <div className="logo">
                 <a href="#0">
-                  <img src={`${appData.lightLogo}`} alt="" />
+                  {/* <img src={`${appData.lightLogo}`} alt="" /> */}
+                  sphere3
                 </a>
               </div>
               <div className="con-info custom-font">
                 <ul>
                   <li>
-                    <span>Email : </span> Avo_support@website.com
+                    <span>Email : </span> contact@sphere3labs.com
                   </li>
                   <li>
-                    <span>Address : </span> A32 , Ave 15th Street, Door 211, San
-                    Franciso, USA 32490.
+                    <span>Address : </span> Johar Town, Lahore 54000, Pakistan
                   </li>
                   <li>
                     <span>Phone : </span> (+1) 2345 678 44 88
@@ -109,7 +111,8 @@ const Footer = ({ noSubBG }) => {
         </div>
         <div className="copyrights text-center">
           <p>
-            © 2022, Avo Template. Made with passion by <a href="#0">ThemesCamp</a>.
+            © 2022, Avo Template. Made with passion by{" "}
+            <a href="#0">ThemesCamp</a>.
           </p>
         </div>
       </div>

@@ -10,9 +10,9 @@ import {
 } from "../../common/navbar";
 
 const Navbar = ({ lr, nr, theme }) => {
-  React.useEffect(() => {
-    handleSearch();
-  }, []);
+  // React.useEffect(() => {
+  //   handleSearch();
+  // }, []);
   return (
     <nav
       ref={nr}
@@ -59,7 +59,7 @@ const Navbar = ({ lr, nr, theme }) => {
           <ul className="navbar-nav ml-auto">
             <li className="nav-item">
               <span className="nav-link" role="button">
-                <Link href="/home/home1-dark">Home</Link>
+                <Link href="/">Home</Link>
               </span>
               {/* <div className="">
                 <Link href="/home/home1-dark">
@@ -69,7 +69,7 @@ const Navbar = ({ lr, nr, theme }) => {
             </li>
 
             <li className="nav-item">
-              <Link href="/showcase2/showcase2-dark">
+              <Link href="/showcase">
                 <a className="">
                   <span className="nav-link" role="button">
                     Showcases
@@ -86,22 +86,22 @@ const Navbar = ({ lr, nr, theme }) => {
               </div> */}
             </li>
             <li className="nav-item">
-              <Link href="/about/about-dark">
+              <Link href="/about">
                 <a className="nav-link">About</a>
               </Link>
             </li>
             <li className="nav-item">
               <span className="nav-link" role="button">
-                <Link href="/works2/works2-dark">portfolio</Link>
+                <Link href="/works">portfolio</Link>
               </span>
             </li>
             <li className="nav-item">
-              <Link href="/contact/contact-dark">
+              <Link href="/contact">
                 <a className="nav-link">Contact</a>
               </Link>
             </li>
           </ul>
-          <div className="search">
+          {/* <div className="search">
             <span className="icon pe-7s-search cursor-pointer"></span>
             <div className="search-form text-center custom-font">
               <Formik
@@ -122,7 +122,7 @@ const Navbar = ({ lr, nr, theme }) => {
               </Formik>
               <span className="close pe-7s-close cursor-pointer"></span>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </nav>
