@@ -1,14 +1,14 @@
 [
   {
     "id": 1,
-    "title": { "first": "Hoodie", "second": "Jacket" },
-    "image": "/img/portfolio/full/1.jpg",
+    "title": { "first": "", "second": "" },
+    "image": "/img/portfolio/port1.jpg",
     "sub": "Design"
   },
   {
     "id": 2,
-    "title": { "first": "Eminem", "second": "Style" },
-    "image": "/img/portfolio/full/4.jpg",
+    "title": { "first": "", "second": "" },
+    "image": "/img/portfolio/dot.jpg",
     "sub": "Design"
   },
   {
