@@ -25,6 +25,7 @@ const Navbar = ({ lr, nr, theme }) => {
           <a
             style={{
               fontSize: "1.3rem",
+              padding: "20px",
             }}
           >
             {/* {theme ? (
@@ -36,11 +37,12 @@ const Navbar = ({ lr, nr, theme }) => {
             ) : (
               <img ref={lr} src={`${appData.lightLogo}`} alt="logo" />
             )} */}
-            Sphere3 Labs
+            sphere3
           </a>
         </Link>
 
         <button
+          style={{ paddingRight: "20px" }}
           className="navbar-toggler"
           type="button"
           onClick={handleMobileDropdown}
