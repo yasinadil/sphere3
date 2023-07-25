@@ -88,7 +88,7 @@ const NavbarFullMenu = ({ theme, lr }) => {
                     </div>
                   </li>
 
-                  <li>
+                  {/* <li>
                     <div className="o-hidden">
                       <Link href="/showcase">
                         <a className="link">
@@ -96,7 +96,7 @@ const NavbarFullMenu = ({ theme, lr }) => {
                         </a>
                       </Link>
                     </div>
-                  </li>
+                  </li> */}
 
                   <li>
                     <div className="o-hidden">

@@ -1,6 +1,6 @@
 import React from "react";
 
-const ProjectDetailsDescription = () => {
+const ProjectDetailsDescription = (props) => {
   return (
     <section className="intro-section section-padding">
       <div className="container">
@@ -14,12 +14,7 @@ const ProjectDetailsDescription = () => {
           </div>
           <div className="col-lg-8 offset-lg-1 col-md-8 mb-30">
             <div className="text">
-              <p className="extra-text">
-                We are a Creative Agency &amp; Startup Studio that provides Digital
-                Products and Services turns to focus on client success. We
-                specialize in user interface design, including front-end
-                development which we consider to be an integral part.
-              </p>
+              <p className="extra-text">{props.description}</p>
             </div>
           </div>
         </div>

@@ -21,15 +21,12 @@ const LoadingScreen = () => {
       <div className={`${appData.showLoading === true ? "showX" : "hideX"}`}>
         <div id="preloader"></div>
       </div>
-      {appData.showLoading ? (
-        <Script
-          id="pace"
-          strategy="beforeInteractive"
-          src="/js/pace.min.js"
-        ></Script>
-      ) : (
-        ""
-      )}
+
+      <Script
+        id="pace"
+        strategy="beforeInteractive"
+        src="/js/pace.min.js"
+      ></Script>
     </>
   );
 };

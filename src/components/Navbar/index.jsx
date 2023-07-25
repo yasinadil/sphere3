@@ -37,7 +37,7 @@ const Navbar = ({ lr, nr, theme }) => {
             ) : (
               <img ref={lr} src={`${appData.lightLogo}`} alt="logo" />
             )} */}
-            sphere3
+            <img src={"/img/logo.png"} alt="logo" style={{ width: "10rem" }} />
           </a>
         </Link>
 
@@ -70,7 +70,7 @@ const Navbar = ({ lr, nr, theme }) => {
               </div> */}
             </li>
 
-            <li className="nav-item">
+            {/* <li className="nav-item">
               <Link href="/showcase">
                 <a className="">
                   <span className="nav-link" role="button">
@@ -78,15 +78,8 @@ const Navbar = ({ lr, nr, theme }) => {
                   </span>
                 </a>
               </Link>
-              {/* <div className="dropdown-menu">
-                <Link href="/showcase/showcase-dark">
-                  <a className="dropdown-item">Full Screen</a>
-                </Link>
-                <Link href="/showcase2/showcase2-dark">
-                  <a className="dropdown-item">Creative Carousel</a>
-                </Link>
-              </div> */}
-            </li>
+           
+            </li> */}
             <li className="nav-item">
               <Link href="/about">
                 <a className="nav-link">About</a>

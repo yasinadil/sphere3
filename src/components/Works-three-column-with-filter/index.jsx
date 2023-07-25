@@ -30,14 +30,14 @@ const WorksThreeColumnWithFilter = ({ filterPosition }) => {
               <span data-filter="*" className="active">
                 All
               </span>
-              <span data-filter=".brand">Web Development</span>
-              <span data-filter=".web">Blockchain</span>
-              <span data-filter=".graphic">Creative</span>
+              <span data-filter=".web">Web Development</span>
+              <span data-filter=".blockchain">Blockchain</span>
+              {/* <span data-filter=".graphic">Creative</span> */}
             </div>
           </div>
 
           <div className="gallery full-width">
-            <div className="col-lg-4 col-md-6 items graphic lg-mr">
+            <div className="col-lg-4 col-md-6 items web lg-mr">
               <div className="item-img wow fadeInUp" data-wow-delay=".4s">
                 <Link href="/project-details/project-details-dark">
                   <a>
@@ -53,66 +53,67 @@ const WorksThreeColumnWithFilter = ({ filterPosition }) => {
               </div>
             </div>
 
-            <div className="col-lg-4 col-md-6 items web">
+            <div className="col-lg-4 col-md-6 items blockchain">
               <div className="item-img wow fadeInUp" data-wow-delay=".4s">
-                <Link href="/project-details/project-details-dark">
+                <Link href="/project-details/dotsama">
                   <a>
                     <img src="/img/portfolio/dot.jpg" alt="image" />
                   </a>
                 </Link>
               </div>
               <div className="cont">
-                <h6>Through The Breaking</h6>
+                <h6>Dotsama NFT Marketplace</h6>
                 <span>
                   <a href="#0">Blockchain</a>, <a href="#0">NFT Marketplace</a>
                 </span>
               </div>
             </div>
 
-            <div className="col-lg-4 col-md-6 items brand lg-mr">
+            <div className="col-lg-4 col-md-6 items blockchain lg-mr ">
               <div className="item-img wow fadeInUp" data-wow-delay=".4s">
-                <Link href="/project-details/project-details-dark">
+                <Link href="/project-details/spaceDAO">
                   <a>
-                    <img src="/img/portfolio/mas/03.jpg" alt="image" />
+                    <img src="/img/portfolio/space.jpg" alt="image" />
                   </a>
                 </Link>
               </div>
               <div className="cont">
-                <h6>Create With Creatives</h6>
+                <h6>SpaceDAO</h6>
                 <span>
-                  <a href="#0">Design</a>, <a href="#0">WordPress</a>
+                  <a href="#0">Blockchain</a>, <a href="#0">Marketplace, DAO</a>
                 </span>
               </div>
             </div>
 
-            <div className="col-lg-4 col-md-6 items brand">
+            <div className="col-lg-4 col-md-6 items blockchain">
               <div className="item-img wow fadeInUp" data-wow-delay=".4s">
-                <Link href="/project-details/project-details-dark">
+                <Link href="/project-details/dogerush">
                   <a>
-                    <img src="/img/portfolio/mas/06.jpg" alt="image" />
+                    <img src="/img/portfolio/dogerush.jpg" alt="image" />
                   </a>
                 </Link>
               </div>
               <div className="cont">
-                <h6>Blast From The Past</h6>
+                <h6>DogeRush</h6>
                 <span>
-                  <a href="#0">Design</a>, <a href="#0">WordPress</a>
+                  <a href="#0">Blockchain</a>,{" "}
+                  <a href="#0">Token Presale, ICO</a>
                 </span>
               </div>
             </div>
 
-            <div className="col-lg-4 col-md-6 items web">
+            <div className="col-lg-4 col-md-6 items blockchain">
               <div className="item-img wow fadeInUp" data-wow-delay=".4s">
-                <Link href="/project-details/project-details-dark">
+                <Link href="/project-details/metawear">
                   <a>
-                    <img src="/img/portfolio/mas/05.jpg" alt="image" />
+                    <img src="/img/portfolio/metawear.jpg" alt="image" />
                   </a>
                 </Link>
               </div>
               <div className="cont">
-                <h6>See It Yourself</h6>
+                <h6>Stealth Meta Wear</h6>
                 <span>
-                  <a href="#0">Design</a>, <a href="#0">WordPress</a>
+                  <a href="#0">Blockchain</a>, <a href="#0">NFT, Minting</a>
                 </span>
               </div>
             </div>
