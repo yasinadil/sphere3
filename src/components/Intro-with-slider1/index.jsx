@@ -107,7 +107,7 @@ const IntroWithSlider1 = ({ sliderRef }) => {
                           {slide?.content && <p>{slide.content}</p>}
                           <Link href="/about">
                             <a className="btn-curve btn-lit mt-30">
-                              <span>Look More</span>
+                              <span>Learn More</span>
                             </a>
                           </Link>
                         </div>
