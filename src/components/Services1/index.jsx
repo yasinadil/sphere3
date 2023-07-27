@@ -22,7 +22,7 @@ const Services1 = () => {
           <span className="tbg">Services</span>
         </div>
         <div className="row">
-          <div
+          {/* <div
             className="col-lg-3 col-md-6 item-box bg-img wow fadeInLeft"
             data-wow-delay=".3s"
             style={{ backgroundImage: "url(/img/1.jpg)" }}
@@ -35,7 +35,7 @@ const Services1 = () => {
                 <span>See All Services</span>
               </a>
             </Link>
-          </div>
+          </div> */}
           <div
             className="col-lg-3 col-md-6 item-box wow fadeInLeft"
             data-wow-delay=".5s"
@@ -64,6 +64,18 @@ const Services1 = () => {
             <Image src={saas} alt="web3" />
             <h6>SaaS products</h6>
             <p>We build rock-solid foundation that will scale your SaaS.</p>
+          </div>
+
+          <div
+            className="col-lg-3 col-md-6 item-box wow fadeInLeft"
+            data-wow-delay=".9s"
+          >
+            <Image src={saas} alt="web3" />
+            <h6>Smart Contract Auditing</h6>
+            <p>
+              Our blockchain experts perform series of tests to ensure your
+              product is safe to launch.
+            </p>
           </div>
         </div>
       </div>
