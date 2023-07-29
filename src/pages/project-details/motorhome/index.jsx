@@ -30,25 +30,27 @@ const ProjectDetailsDark = () => {
     <DarkTheme>
       <Navbar nr={navbarRef} lr={logoRef} />
       <ProjectDetailsHeader
-        category={"Blockchain"}
-        title={"Doge Rush Presale"}
-        projImg={"dogeRushMonitor.png"}
+        category={"Web Development"}
+        title={"MotorHome Iberica"}
+        projImg={"motorMonitor.png"}
       />
       <ProjectDetailsIntroduction
-        introduction={"The Ultimate meme coin revolution."}
-        projURL={"https://dogerush.io"}
-        client={"Doge Rush"}
-        date={"Juky 01, 2023"}
-        category={"Blockchain"}
-        tags={["Token Presale", "ERC20", "ICO", "Ethereum"]}
+        introduction={
+          "MotorHome Iberica, a leading bus company, embarks on a digital journey with the aid of WordPress, Elementor Pro, and the Astra theme to create a compelling online presence for its bus sales and rental services"
+        }
+        projURL={"https://motorhomeiberica.es"}
+        client={"MotorHome Iberica"}
+        date={"Mar 23, 2023"}
+        category={"Web Development"}
+        tags={["Wordpress", "Elementor Pro", "Astra Theme"]}
       />
       <ProjectDetailsImages
-        projURL={"https://dogerush.io"}
-        projImg={"dogeRushMonitor.png"}
+        projURL={"https://motorhomeiberica.es"}
+        projImg={"motorMonitor.png"}
       />
       <ProjectDetailsDescription
         description={
-          "Welcome to Doge Rush, the unstoppable force in the meme coin universe! We're smashing boundaries, fusing viral internet culture with real-world utilities. We're the first to do this. And who's leading the charge? Only the most iconic duo: Doge and Elon. Here, memes aren't just about fun; they're about strategic financial growth. We're creating an epic story, and you're invited to be part of it."
+          "Discover how MotorHome lberica harnesses the power of WordPress, leverages the flexibility of Elementor Pro, and optimizes the Astra theme to craft an engaging website that showcases its extensive fleet of buses available for sale and rent. Witness the seamless integration of modern design tools that enhance the user experience, providing customers with a convenient and informative platform to meet their transportation needs."
         }
       />
       {/* <ProjectDetailsVideo

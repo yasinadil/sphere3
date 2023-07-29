@@ -37,61 +37,35 @@ const Footer = ({ noSubBG }) => {
                     <span>Address : </span> Johar Town, Lahore 54000, Pakistan
                   </li>
                   <li>
-                    <span>Phone : </span> (+1) 2345 678 44 88
+                    <span>Phone : </span> (+92) 313 796 4784
                   </li>
                 </ul>
-              </div>
-              <div className="social-icon">
-                <h6 className="custom-font stit simple-btn">Follow Us</h6>
-                <div className="social">
-                  <a href="#0" className="icon">
-                    <i className="fab fa-facebook-f"></i>
-                  </a>
-                  <a href="#0" className="icon">
-                    <i className="fab fa-twitter"></i>
-                  </a>
-                  <a href="#0" className="icon">
-                    <i className="fab fa-pinterest"></i>
-                  </a>
-                  <a href="#0" className="icon">
-                    <i className="fab fa-behance"></i>
-                  </a>
-                </div>
               </div>
             </div>
           </div>
           <div className="col-lg-5 offset-lg-2">
-            <div className="subscribe mb-50">
-              <h6 className="custom-font stit simple-btn">Newslatter</h6>
-              <p>Sign up for subscribe out newsletter!</p>
-              <Formik
-                initialValues={{
-                  subscribe: "",
-                }}
-                onSubmit={async (values) => {
-                  await sendEmail(500);
-                  alert(JSON.stringify(values, null, 2));
-                  // Reset the values
-                  values.subscribe = "";
-                }}
-              >
-                {({ errors, touched }) => (
-                  <Form>
-                    <div className="form-group custom-font">
-                      <Field
-                        validate={validateEmail}
-                        type="email"
-                        name="subscribe"
-                        placeholder="Your Email"
-                      />
-                      {errors.email && touched.email && (
-                        <div>{errors.email}</div>
-                      )}
-                      <button className="cursor-pointer">Subscribe</button>
-                    </div>
-                  </Form>
-                )}
-              </Formik>
+            <div className="cont mb-50">
+              <div className="social-icon">
+                <h6 className="custom-font stit simple-btn">Follow Us</h6>
+                <div className="social">
+                  <a
+                    href="https://www.linkedin.com/company/sphere3-labs"
+                    rel="noreferrer"
+                    target="_blank"
+                    className="icon"
+                  >
+                    <i className="fab fa-linkedin"></i>
+                  </a>
+                  <a
+                    href="https://twitter.com/sphere3labs"
+                    rel="noreferrer"
+                    target="_blank"
+                    className="icon"
+                  >
+                    <i className="fab fa-twitter"></i>
+                  </a>
+                </div>
+              </div>
             </div>
             {/* <div className="insta">
               <h6 className="custom-font stit simple-btn">Instagram Post</h6>

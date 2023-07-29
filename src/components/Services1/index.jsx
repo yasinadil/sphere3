@@ -5,6 +5,7 @@ import Image from "next/image";
 import blockchain from "../../../public/img/blockchain.png";
 import monitor from "../../../public/img/monitor.png";
 import saas from "../../../public/img/saas.png";
+import audit from "../../../public/img/audit.png";
 
 const Services1 = () => {
   return (
@@ -70,7 +71,7 @@ const Services1 = () => {
             className="col-lg-3 col-md-6 item-box wow fadeInLeft"
             data-wow-delay=".9s"
           >
-            <Image src={saas} alt="web3" />
+            <Image src={audit} alt="web3" />
             <h6>Smart Contract Auditing</h6>
             <p>
               Our blockchain experts perform series of tests to ensure your

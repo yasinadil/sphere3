@@ -5,7 +5,7 @@ const ProjectDetailsImages = (props) => {
   return (
     <div className="row justify-content-center">
       <div style={{ justifyContent: "center" }}>
-        <a href={`${props.projURL}`}>
+        <a href={`${props.projURL}`} rel="noreferrer" target="_blank">
           <img
             alt=""
             src={`/img/portfolio/${props.projImg}`}

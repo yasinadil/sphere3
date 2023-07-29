@@ -33,12 +33,12 @@ const ProjectDetailsDark = () => {
       <ProjectDetailsHeader
         category={"Blockchain"}
         title={"Stealth Meta Wear"}
-        projURL={"https://www.stealthmetawear.com"}
       />
       <ProjectDetailsIntroduction
         introduction={
           "Stealth Meta Wear is an innovative project that merges the realms of digital fashion and NFT (Non-Fungible Token) art. It aims to create a unique and cutting-edge collection of digital fashion items that are tokenized as NFTs on the blockchain."
         }
+        projURL={"https://www.stealthmetawear.com"}
         client={"Stealth Meta Wear"}
         date={"May 20, 2023"}
         category={"Blockchain"}

@@ -46,9 +46,9 @@ const WorksThreeColumnWithFilter = ({ filterPosition }) => {
                 </Link>
               </div>
               <div className="cont">
-                <h6>Creativity Demand</h6>
+                <h6>PfBank</h6>
                 <span>
-                  <a href="#0">Design</a>, <a href="#0">React JS, Node Js</a>
+                  <a href="#0">Frontend</a>, <a href="#0">React JS</a>
                 </span>
               </div>
             </div>
@@ -85,6 +85,38 @@ const WorksThreeColumnWithFilter = ({ filterPosition }) => {
               </div>
             </div>
 
+            <div className="col-lg-4 col-md-6 items web">
+              <div className="item-img wow fadeInUp" data-wow-delay=".4s">
+                <Link href="/project-details/teconni">
+                  <a>
+                    <img src="/img/portfolio/teconni.jpeg" alt="image" />
+                  </a>
+                </Link>
+              </div>
+              <div className="cont">
+                <h6>Teconni</h6>
+                <span>
+                  <a href="#0">Web Development</a>, <a href="#0">Wordpress</a>
+                </span>
+              </div>
+            </div>
+
+            <div className="col-lg-4 col-md-6 items web">
+              <div className="item-img wow fadeInUp" data-wow-delay=".4s">
+                <Link href="/project-details/gmg">
+                  <a>
+                    <img src="/img/portfolio/gmg.jpeg" alt="image" />
+                  </a>
+                </Link>
+              </div>
+              <div className="cont">
+                <h6>GMG Media Agency</h6>
+                <span>
+                  <a href="#0">Web Development</a>, <a href="#0">Wordpress</a>
+                </span>
+              </div>
+            </div>
+
             <div className="col-lg-4 col-md-6 items blockchain">
               <div className="item-img wow fadeInUp" data-wow-delay=".4s">
                 <Link href="/project-details/dogerush">
@@ -102,6 +134,22 @@ const WorksThreeColumnWithFilter = ({ filterPosition }) => {
               </div>
             </div>
 
+            <div className="col-lg-4 col-md-6 items web">
+              <div className="item-img wow fadeInUp" data-wow-delay=".4s">
+                <Link href="/project-details/motorhome">
+                  <a>
+                    <img src="/img/portfolio/motorHome.jpeg" alt="image" />
+                  </a>
+                </Link>
+              </div>
+              <div className="cont">
+                <h6>MotorHome Iberica</h6>
+                <span>
+                  <a href="#0">Web Development</a>, <a href="#0">Wordpress</a>
+                </span>
+              </div>
+            </div>
+
             <div className="col-lg-4 col-md-6 items blockchain">
               <div className="item-img wow fadeInUp" data-wow-delay=".4s">
                 <Link href="/project-details/metawear">
@@ -114,22 +162,6 @@ const WorksThreeColumnWithFilter = ({ filterPosition }) => {
                 <h6>Stealth Meta Wear</h6>
                 <span>
                   <a href="#0">Blockchain</a>, <a href="#0">NFT, Minting</a>
-                </span>
-              </div>
-            </div>
-
-            <div className="col-lg-4 col-md-6 items graphic">
-              <div className="item-img wow fadeInUp" data-wow-delay=".4s">
-                <Link href="/project-details/project-details-dark">
-                  <a>
-                    <img src="/img/portfolio/mas/04.jpg" alt="image" />
-                  </a>
-                </Link>
-              </div>
-              <div className="cont">
-                <h6>Energies of Love</h6>
-                <span>
-                  <a href="#0">Design</a>, <a href="#0">WordPress</a>
                 </span>
               </div>
             </div>

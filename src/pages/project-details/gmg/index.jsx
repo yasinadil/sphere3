@@ -30,25 +30,27 @@ const ProjectDetailsDark = () => {
     <DarkTheme>
       <Navbar nr={navbarRef} lr={logoRef} />
       <ProjectDetailsHeader
-        category={"Blockchain"}
-        title={"Doge Rush Presale"}
-        projImg={"dogeRushMonitor.png"}
+        category={"Web Development"}
+        title={"GMG Media Agency"}
+        projImg={"gmgMonitor.png"}
       />
       <ProjectDetailsIntroduction
-        introduction={"The Ultimate meme coin revolution."}
-        projURL={"https://dogerush.io"}
-        client={"Doge Rush"}
-        date={"Juky 01, 2023"}
-        category={"Blockchain"}
-        tags={["Token Presale", "ERC20", "ICO", "Ethereum"]}
+        introduction={
+          "GMG Media Agency's journey unfolds as it harnesses the versatility of WordPress, Elementor Pro, and the Astra theme to craft a dynamic and immersive online presence for its media services."
+        }
+        projURL={"https://gsumediagroup.com"}
+        client={"GMG Media Agency"}
+        date={"Nov 11, 2022"}
+        category={"Web Development"}
+        tags={["Wordpress", "Elementor Pro", "Astra Theme"]}
       />
       <ProjectDetailsImages
-        projURL={"https://dogerush.io"}
-        projImg={"dogeRushMonitor.png"}
+        projURL={"https://gsumediagroup.com"}
+        projImg={"gmgMonitor.png"}
       />
       <ProjectDetailsDescription
         description={
-          "Welcome to Doge Rush, the unstoppable force in the meme coin universe! We're smashing boundaries, fusing viral internet culture with real-world utilities. We're the first to do this. And who's leading the charge? Only the most iconic duo: Doge and Elon. Here, memes aren't just about fun; they're about strategic financial growth. We're creating an epic story, and you're invited to be part of it."
+          "Discover how GMG Media Agency embraces the potential of WordPress, utilizes ihe flexibility of Elementor Pro, and maximizes the performance of the Astra theme to build a captivating website that showcases its media services. Witness the seamless integration of cutting-edge design tools that elevate GMG's digital offerings providing clients wih an engaging and Impactful experience in the world of media."
         }
       />
       {/* <ProjectDetailsVideo

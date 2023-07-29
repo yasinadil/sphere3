@@ -33,13 +33,13 @@ const ProjectDetailsDark = () => {
       <ProjectDetailsHeader
         category={"Blockchain"}
         title={"Dotsama NFT Marketplace"}
-        projURL={"https://dotsama-nft-marketplace.vercel.app"}
         projImg={"dotMonitor.png"}
       />
       <ProjectDetailsIntroduction
         introduction={
           "NFT Marketplace on Astar and Moonbeam which makes use of EIP712 signatures."
         }
+        projURL={"https://dotsama-nft-marketplace.vercel.app"}
         client={"DotsamaNFT.com"}
         date={"Ongoing"}
         category={"Blockchain"}

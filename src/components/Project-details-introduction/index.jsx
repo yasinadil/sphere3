@@ -23,7 +23,9 @@ const ProjectDetailsIntroduction = (props) => {
             <div className="item mt-30">
               <h6>Client</h6>
               <p>
-                <a href="#0">{props.client}</a>
+                <a href={props.projURL} rel="noreferrer" target="_blank">
+                  {props.client}
+                </a>
               </p>
             </div>
           </div>

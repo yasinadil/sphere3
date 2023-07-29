@@ -1,22 +1,71 @@
-import React from "react";
-import { Formik, Form, Field } from "formik";
-import axios from "axios";
+import React, { useRef } from "react";
+import { ToastContainer, toast } from "react-toastify";
 import Split from "../Split";
+import emailjs from "@emailjs/browser";
+import "react-toastify/dist/ReactToastify.css";
 
 const ContactWithMap = ({ theme = "dark" }) => {
-  const messageRef = React.useRef(null);
-  function validateEmail(value) {
-    let error;
-    if (!value) {
-      error = "Required";
-    } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(value)) {
-      error = "Invalid email address";
-    }
-    return error;
-  }
-  const sendMessage = (ms) => new Promise((r) => setTimeout(r, ms));
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+    emailjs
+      .sendForm(
+        process.env.NEXT_PUBLIC_SERVICE_ID,
+        process.env.NEXT_PUBLIC_TEMPLATE_ID,
+        form.current,
+        process.env.NEXT_PUBLIC_PUBLIC_KEY
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          toast.success("Message sent successfully!", {
+            position: "bottom-right",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "dark",
+          });
+          form.current.from_name.value = "";
+          form.current.from_email.value = "";
+          form.current.message.value = "";
+        },
+        (error) => {
+          console.log(error.text);
+          toast.error(error.text, {
+            position: "bottom-right",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "dark",
+          });
+          form.current.from_name.value = "";
+          form.current.from_email.value = "";
+          form.current.message.value = "";
+        }
+      );
+  };
+
   return (
     <>
+      <ToastContainer
+        position="bottom-right"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="dark"
+      />
       <section className="contact section-padding">
         <div className="container">
           <div className="row">
@@ -24,90 +73,53 @@ const ContactWithMap = ({ theme = "dark" }) => {
               <div className="form md-mb50">
                 <h4 className="extra-title mb-50">Get In Touch.</h4>
 
-                <Formik
-                  initialValues={{
-                    name: "",
-                    email: "",
-                    message: "",
-                  }}
-                  onSubmit={async (values) => {
-                    await sendMessage(500);
-                    // alert(JSON.stringify(values, null, 2));
-                    // show message
-                    const formData = new FormData();
-
-                    formData.append("name", values.name);
-                    formData.append("email", values.email);
-                    formData.append("message", values.message);
-
-                    const res = await axios.post("/contact.php", formData);
-
-                    if (!res) return;
-
-                    messageRef.current.innerText =
-                      "Your Message has been successfully sent. I will contact you soon.";
-                    // Reset the values
-                    values.name = "";
-                    values.email = "";
-                    values.message = "";
-                    // clear message
-                    setTimeout(() => {
-                      messageRef.current.innerText = "";
-                    }, 2000);
-                  }}
+                <form
+                  ref={form}
+                  id="contact-form"
+                  onSubmit={(event) => sendEmail(event)}
                 >
-                  {({ errors, touched }) => (
-                    <Form id="contact-form">
-                      <div className="messages" ref={messageRef}></div>
+                  <div className="controls">
+                    <div className="form-group">
+                      <input
+                        id="form_name"
+                        type="text"
+                        name="from_name"
+                        placeholder="Name"
+                        required="required"
+                      />
+                    </div>
 
-                      <div className="controls">
-                        <div className="form-group">
-                          <Field
-                            id="form_name"
-                            type="text"
-                            name="name"
-                            placeholder="Name"
-                            required="required"
-                          />
-                        </div>
+                    <div className="form-group">
+                      <input
+                        id="form_email"
+                        type="email"
+                        name="from_email"
+                        placeholder="Email"
+                        required="required"
+                      />
+                    </div>
 
-                        <div className="form-group">
-                          <Field
-                            validate={validateEmail}
-                            id="form_email"
-                            type="email"
-                            name="email"
-                            placeholder="Email"
-                            required="required"
-                          />
-                          {errors.email && touched.email && (
-                            <div>{errors.email}</div>
-                          )}
-                        </div>
+                    <div className="form-group">
+                      <input
+                        as="textarea"
+                        id="form_message"
+                        name="message"
+                        placeholder="Message"
+                        rows="4"
+                        required="required"
+                      />
+                    </div>
 
-                        <div className="form-group">
-                          <Field
-                            as="textarea"
-                            id="form_message"
-                            name="message"
-                            placeholder="Message"
-                            rows="4"
-                            required="required"
-                          />
-                        </div>
-
-                        <button
-                          type="submit"
-                          className={`btn-curve ${
-                            theme === "dark" ? "btn-lit" : "btn-color"
-                          } disabled`}
-                        >
-                          <span>Send Message</span>
-                        </button>
-                      </div>
-                    </Form>
-                  )}
-                </Formik>
+                    <button
+                      type="submit"
+                      className={`btn-curve ${
+                        theme === "dark" ? "btn-lit" : "btn-color"
+                      } disabled`}
+                    >
+                      <span>Send Message</span>
+                    </button>
+                  </div>
+                </form>
               </div>
             </div>
             <div className="col-lg-5 offset-lg-1">
@@ -120,9 +132,12 @@ const ContactWithMap = ({ theme = "dark" }) => {
                 </Split>
                 <div className="item mb-40">
                   <h5>
-                    <a href="#0">contact@sphere3labs.com</a>
+                    <a href="mailto:contact@sphere3labs.com">
+                      contact@sphere3labs.com
+                    </a>
                   </h5>
-                  <h5>+4.930.705.5448</h5>
+
+                  <h5>(+92) 313 796 4784</h5>
                 </div>
                 <Split>
                   <h3 className="custom-font wow" data-splitting>
@@ -137,17 +152,21 @@ const ContactWithMap = ({ theme = "dark" }) => {
                   </h6>
                 </div>
                 <div className="social mt-50">
-                  <a href="#0" className="icon">
-                    <i className="fab fa-facebook-f"></i>
+                  <a
+                    href="https://www.linkedin.com/company/sphere3-labs"
+                    rel="noreferrer"
+                    target="_blank"
+                    className="icon"
+                  >
+                    <i className="fab fa-linkedin"></i>
                   </a>
-                  <a href="#0" className="icon">
+                  <a
+                    href="https://twitter.com/sphere3labs"
+                    rel="noreferrer"
+                    target="_blank"
+                    className="icon"
+                  >
                     <i className="fab fa-twitter"></i>
-                  </a>
-                  <a href="#0" className="icon">
-                    <i className="fab fa-pinterest"></i>
-                  </a>
-                  <a href="#0" className="icon">
-                    <i className="fab fa-behance"></i>
                   </a>
                 </div>
               </div>
@@ -157,7 +176,7 @@ const ContactWithMap = ({ theme = "dark" }) => {
       </section>
       <div className="map" id="ieatmaps">
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19868.687203718404!2d-0.14297520856388865!3d51.502466162777694!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2sLondon%2C%20UK!5e0!3m2!1sen!2seg!4v1644772966009!5m2!1sen!2seg"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3402.940419471167!2d74.25942189999999!3d31.4708251!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3919022c22999a57%3A0xe8430dd89d356411!2sExpo%20Center%20Rd%2C%20Phase%202%20Johar%20Town%2C%20Lahore%2C%20Punjab!5e0!3m2!1sen!2s!4v1690646136581!5m2!1sen!2s"
           style={{ border: 0 }}
           allowFullScreen=""
           loading="lazy"
@@ -167,10 +186,7 @@ const ContactWithMap = ({ theme = "dark" }) => {
       <footer className="footer-half sub-bg">
         <div className="container">
           <div className="copyrights text-center mt-0">
-            <p>
-              © 2022, Avo Template. Made with passion by
-              <a href="#0">ThemesCamp</a>.
-            </p>
+            <p>© 2023, Sphere3 Labs - Your Business Partner</p>
           </div>
         </div>
       </footer>

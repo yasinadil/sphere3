@@ -33,13 +33,13 @@ const ProjectDetailsDark = () => {
       <ProjectDetailsHeader
         category={"Blockchain"}
         title={"Space Marketpace"}
-        projURL={"https://space-marketplace.vercel.app"}
         projImg={"dotMonitor.png"}
       />
       <ProjectDetailsIntroduction
         introduction={
           "DAOs are often faced with a sustainability problem.  NFT membership tokens present a one-time investment in a cause without future revenue.  New mints dilute the supply.  Members expect returns on their investment but are not incentivized to contribute.  NFT royalties can be bypassed, and their revenue is often insufficient to support the needs of a DAO."
         }
+        projURL={"https://space-marketplace.vercel.app"}
         client={"Space Marketplace"}
         date={"June 23, 2023"}
         category={"Blockchain"}
