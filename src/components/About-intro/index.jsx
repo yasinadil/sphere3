@@ -15,14 +15,13 @@ const AboutIntro = () => {
             <div className="text">
               <Split>
                 <p className="wow txt words chars splitting" data-splitting>
-                  We develop creative solutions for small and big brands alike,
-                  build authentic product identities and much more.Lorem ipsum
-                  dolor sit amet, consectetur adipiscing elit sit non facilisis
-                  vitae eu. Ultrices ut diam morbi risus dui, nec eget at lorem
-                  in id tristique in elementum leo nisi eleifend placerat magna
-                  lacus elementum ornare vehicula odio posuere quisque ultrices
-                  tempus cras id blandit maecenas in ornare quis dolor tempus
-                  risus vitae feugiat fames aliquet sede.
+                  We specialize in top-notch web development and cutting-edge
+                  blockchain services. Our mission is to empower businesses and
+                  individuals with transformative digital solutions that
+                  revolutionize their online presence. We implement
+                  industry-leading security protocols and best practices to
+                  ensure the integrity, confidentiality, and immutability of
+                  your blockchain solutions.
                 </p>
               </Split>
             </div>

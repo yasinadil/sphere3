@@ -1,38 +1,26 @@
 [
   {
     "id": 1,
-    "image": "/img/team/adil.png",
+    "image": "/img/team/p1.png",
     "name": "Adil Yasin",
     "title": "Blockchain Developer"
   },
   {
     "id": 2,
-    "image": "/img/team/02.jpg",
-    "name": "Jonson Leo",
-    "title": "Founder"
+    "image": "/img/team/p2.png",
+    "name": "Ahmed Burhan",
+    "title": "Web Developer"
   },
   {
     "id": 3,
-    "image": "/img/team/03.jpg",
-    "name": "Leio Man",
-    "title": "Founder"
+    "image": "/img/team/p3.png",
+    "name": "Arifeen Iqbal",
+    "title": "Design"
   },
   {
     "id": 4,
-    "image": "/img/team/4.jpg",
-    "name": "Robert Front",
-    "title": "CEO Founder"
-  },
-  {
-    "id": 5,
-    "image": "/img/team/5.jpg",
-    "name": "Legender Mao",
-    "title": "3D Visualization"
-  },
-  {
-    "id": 6,
-    "image": "/img/team/6.jpg",
-    "name": "Matt Huk",
-    "title": "3D Visualization"
+    "image": "/img/team/p3.png",
+    "name": "Arifeen Iqbal",
+    "title": "Marketing"
   }
 ]
