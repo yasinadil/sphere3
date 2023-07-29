@@ -39,7 +39,7 @@ const WorksThreeColumnWithFilter = ({ filterPosition }) => {
           <div className="gallery full-width">
             <div className="col-lg-4 col-md-6 items web lg-mr">
               <div className="item-img wow fadeInUp" data-wow-delay=".4s">
-                <Link href="/project-details/project-details-dark">
+                <Link href="/project-details/pfbank">
                   <a>
                     <img src="/img/portfolio/port1.JPG" alt="image" />
                   </a>
