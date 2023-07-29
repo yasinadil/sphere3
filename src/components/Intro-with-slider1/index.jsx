@@ -139,17 +139,21 @@ const IntroWithSlider1 = ({ sliderRef }) => {
         ></div>
 
         <div className="social-icon">
-          <a href="#0">
-            <i className="fab fa-facebook-f"></i>
+          <a
+            href="https://www.linkedin.com/company/sphere3-labs"
+            rel="noreferrer"
+            target="_blank"
+            className="icon"
+          >
+            <i className="fab fa-linkedin"></i>
           </a>
-          <a href="#0">
+          <a
+            href="https://twitter.com/sphere3labs"
+            rel="noreferrer"
+            target="_blank"
+            className="icon"
+          >
             <i className="fab fa-twitter"></i>
-          </a>
-          <a href="#0">
-            <i className="fab fa-behance"></i>
-          </a>
-          <a href="#0">
-            <i className="fab fa-pinterest-p"></i>
           </a>
         </div>
       </div>
