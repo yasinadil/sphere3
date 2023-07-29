@@ -4621,14 +4621,14 @@ header.simpl .caption .btn-curve {
   margin: 0 8px;
   color: #75dab4;
 }
-.team .item:hover .info h5,
+/* .team .item:hover .info h5,
 .team .item:hover .info span {
   opacity: 0;
-}
-.team .item:hover .info .social {
+} */
+/* .team .item:hover .info .social {
   bottom: 0;
   opacity: 1;
-}
+} */
 .team .navs .prev,
 .team .navs .next {
   color: #ccc;
