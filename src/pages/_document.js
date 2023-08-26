@@ -15,7 +15,7 @@ class MyDocument extends Document {
           <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
           <meta
             name="keywords"
-            content="blockchain dapp, ethereum dapp, nextjs dapp, nextjs website, nft minting website, nft minting dapp, nft marketplace agency, blockchain agency, token staking agency, token presale, token presale agency, nft, wordpress agency, react agency, react business website, nextjs website "
+            content="blockchain developers near me, blockchain agency near me, nft agency near me, defi agency near me, blockchain dapp, ethereum dapp, nextjs dapp, nextjs website, nft minting website, nft minting dapp, nft marketplace agency, blockchain agency, token staking agency, token presale, token presale agency, nft, wordpress agency, react agency, react business website, nextjs website "
           />
           <meta
             name="description"

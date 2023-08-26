@@ -82,6 +82,24 @@ const VideoWithTestimonials = () => {
                 >
                   <div className="item">
                     <p>
+                      Sphere3 was excellent. They noticed some security
+                      vulnerabilities and also some gas saving opportunities in
+                      the contract i created and fixed then for me. They also
+                      responded quickly and made updates for my requests.
+                    </p>
+                    <div className="info">
+                      <div className="cont">
+                        <div className="author">
+                          <h6 className="author-name custom-font">
+                            WIY Agency
+                          </h6>
+                          <span className="author-details">CEO, WIY</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="item">
+                    <p>
                       It was a pleasure working together, great communication
                       and professional work.
                     </p>
@@ -117,25 +135,6 @@ const VideoWithTestimonials = () => {
                           {/* <span className="author-details">
                             Co-founder, Colabrio
                           </span> */}
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="item">
-                    <p>
-                      Nulla metus metus ullamcorper vel tincidunt sed euismod
-                      nibh volutpat velit class aptent taciti sociosqu ad
-                      litora.
-                    </p>
-                    <div className="info">
-                      <div className="cont">
-                        <div className="author">
-                          <h6 className="author-name custom-font">
-                            Alex Regelman
-                          </h6>
-                          <span className="author-details">
-                            Co-founder, Colabrio
-                          </span>
                         </div>
                       </div>
                     </div>

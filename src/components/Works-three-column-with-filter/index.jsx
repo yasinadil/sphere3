@@ -138,7 +138,7 @@ const WorksThreeColumnWithFilter = ({ filterPosition }) => {
               <div className="item-img wow fadeInUp" data-wow-delay=".4s">
                 <Link href="/project-details/motorhome">
                   <a>
-                    <img src="/img/portfolio/motorHome.jpeg" alt="image" />
+                    <img src="/img/portfolio/Motorhome.jpeg" alt="image" />
                   </a>
                 </Link>
               </div>
@@ -162,6 +162,31 @@ const WorksThreeColumnWithFilter = ({ filterPosition }) => {
                 <h6>Stealth Meta Wear</h6>
                 <span>
                   <a href="#0">Blockchain</a>, <a href="#0">NFT, Minting</a>
+                </span>
+              </div>
+            </div>
+
+            <div className="col-lg-4 col-md-6 items blockchain">
+              <div className="item-img wow fadeInUp" data-wow-delay=".4s">
+                <img src="/img/portfolio/scoobyspace.JPG" alt="image" />
+              </div>
+              <div className="cont">
+                <h6>Scooby Space Presale</h6>
+                <span>
+                  <a href="#0">Blockchain</a>,{" "}
+                  <a href="#0">Token Presale, ICO</a>
+                </span>
+              </div>
+            </div>
+
+            <div className="col-lg-4 col-md-6 items blockchain">
+              <div className="item-img wow fadeInUp" data-wow-delay=".4s">
+                <img src="/img/portfolio/freshume2.JPG" alt="image" />
+              </div>
+              <div className="cont">
+                <h6>Freshume LinkedIn NFT Certificates</h6>
+                <span>
+                  <a href="#0">Blockchain</a>, <a href="#0">NFT, Blockchain</a>
                 </span>
               </div>
             </div>
